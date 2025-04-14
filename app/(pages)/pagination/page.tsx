@@ -19,6 +19,15 @@ import {
 } from "@/components/ui/select"
 import {Button} from "@/components/ui/button"
 import {IoClipboardOutline} from "react-icons/io5"
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
 
 const PaginationPage = () => {
     const [activeTab, setActiveTab] = useState("preview")
@@ -84,15 +93,67 @@ const PaginationPage = () => {
 
                     <div className="flex justify-center items-center gap-[10px]">
                         <Button>Open in</Button>
-                        <Button>
+                        <Button variant="outline">
                             <IoClipboardOutline />
                         </Button>
                     </div>
                 </div>
 
-                <div>s</div>
+                <div>
+                    <Pagination>
+                        <PaginationContent>
+                            <PaginationItem>
+                                <PaginationPrevious />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink>1</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink isActive>2</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink>3</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationEllipsis />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationNext />
+                            </PaginationItem>
+                        </PaginationContent>
+                    </Pagination>
+                </div>
 
                 <p> </p>
+            </div>
+
+            <div className="mt-[50px]">
+                <h1 className="text-[30px] font-bold border-b pb-[10px]">
+                    Usage
+                </h1>
+            </div>
+
+            <div className="mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50">
+                <pre>
+                    {`
+<Pagination>
+  <PaginationContent>
+    <PaginationItem>
+      <PaginationPrevious href="#" />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationLink href="#">1</PaginationLink>
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationEllipsis />
+    </PaginationItem>
+    <PaginationItem>
+      <PaginationNext href="#" />
+    </PaginationItem>
+  </PaginationContent>
+</Pagination>
+`}
+                </pre>
             </div>
         </section>
     )

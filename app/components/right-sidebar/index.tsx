@@ -3,7 +3,7 @@ import React from "react"
 
 const RightSidebar = () => {
     return (
-        <aside className="w-[270px] border-l border-dashed h-[100vh] sticky top-[57px] gap-[5px] p-[15px] flex flex-col">
+        <aside className="w-[270px] border-l border-dashed h-[100vh] sticky top-[57px] gap-[5px] p-[15px] flex flex-col ">
             <h1 className="font-medium">On This Page</h1>
             <p className="opacity-80 cursor-pointer text-[14px]">
                 Installation

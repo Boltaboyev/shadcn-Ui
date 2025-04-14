@@ -42,7 +42,7 @@ export default function RootLayout({
                         {children}
                         <RightSidebar />
                     </main>
-                    <Footer />
+                    {/* <Footer /> */}
                 </ThemeProvider>
             </body>
         </html>

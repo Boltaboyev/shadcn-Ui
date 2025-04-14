@@ -9,6 +9,7 @@ import {useTheme} from "next-themes"
 
 // icons
 import {SiShadcnui} from "react-icons/si"
+import {HiMenuAlt4} from "react-icons/hi"
 
 const Header = () => {
     const {theme, setTheme} = useTheme()
@@ -23,13 +24,14 @@ const Header = () => {
     return (
         <header className="py-[10px] border-b border-dashed backdrop-blur-[7px] sticky top-0 z-10">
             <div className="w-[95%] m-auto flex justify-between items-center gap-[10px]">
-                <div className="flex justify-start items-center gap-[20px]">
+                <HiMenuAlt4 className="text-[30px] hidden max-[450px]:block" />
+                <div className="flex justify-start items-center gap-[20px] max-[450px]:hidden">
                     <div className="flex justify-start items-center gap-[10px]">
                         <SiShadcnui />
                         <p className="font-bold">shadcn/ui</p>
                     </div>
 
-                    <div className="*:font-medium *:cursor-pointer *:opacity-80 flex justify-start items-center gap-[15px]">
+                    <div className="*:font-medium *:cursor-pointer *:opacity-80 flex justify-start items-center gap-[15px] max-[875px]:hidden">
                         <p>Docs</p>
                         <p>Components</p>
                         <p>Blocks</p>
@@ -38,8 +40,7 @@ const Header = () => {
                         <p>Colors</p>
                     </div>
                 </div>
-
-                <div className="flex justify-end items-center gap-[15px]">
+                <div className="flex justify-end items-center gap-[15px] max-[400px]:gap-[5px]">
                     <Input
                         type="search"
                         placeholder="Search documentation..."
