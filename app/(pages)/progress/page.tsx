@@ -128,7 +128,7 @@ const ProgressPage = () => {
             </div>
 
             <div className="mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 flex justify-between items-center gap-[10px]">
-                <p className="overflow-scroll text-nowrap">
+                <p className=" max-[550px]:overflow-scroll text-nowrap">
                     npx shadcn@latest add progress
                 </p>
                 <IoClipboardOutline className="cursor-pointer" />
@@ -140,12 +140,12 @@ const ProgressPage = () => {
                 </h1>
             </div>
 
-            <div className="overflow-scroll mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 flex justify-between items-center">
+            <div className="max-[550px]:overflow-scroll mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 flex justify-between items-center">
                 <pre>{`import { Progress } from "@/components/ui/progress"`}</pre>
                 <IoClipboardOutline className="cursor-pointer" />
             </div>
 
-            <div className="overflow-scroll mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 flex justify-between items-center">
+            <div className="max-[550px]:overflow-scroll mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 flex justify-between items-center">
                 <pre>{`<Progress value={33} />`}</pre>
                 <IoClipboardOutline className="cursor-pointer" />
             </div>

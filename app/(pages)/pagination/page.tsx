@@ -134,7 +134,7 @@ const PaginationPage = () => {
                 </h1>
             </div>
 
-            <div className="mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 overflow-scroll">
+            <div className="mt-[15px] p-[15px] rounded-lg bg-accent hover:text-accent-foreground dark:bg-accent/50 max-[550px]:overflow-y-scroll">
                 <pre>
                     {`<Pagination>
   <PaginationContent>
