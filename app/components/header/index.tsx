@@ -24,21 +24,23 @@ const Header = () => {
     return (
         <header className="py-[10px] border-b border-dashed backdrop-blur-[7px] sticky top-0 z-10">
             <div className="w-[95%] m-auto flex justify-between items-center gap-[10px]">
-                <HiMenuAlt4 className="text-[30px] hidden max-[450px]:block" />
-                <div className="flex justify-start items-center gap-[20px] max-[450px]:hidden">
-                    <div className="flex justify-start items-center gap-[10px]">
-                        <SiShadcnui />
-                        <p className="font-bold">shadcn/ui</p>
-                    </div>
+                <div className="flex justify-center items-center gap-[20px]">
+                    <div className="flex justify-start items-center gap-[20px] max-[450px]:hidden">
+                        <div className="flex justify-start items-center gap-[10px]">
+                            <SiShadcnui />
+                            <p className="font-bold">shadcn/ui</p>
+                        </div>
 
-                    <div className="*:font-medium *:cursor-pointer *:opacity-80 flex justify-start items-center gap-[15px] max-[875px]:hidden">
-                        <p>Docs</p>
-                        <p>Components</p>
-                        <p>Blocks</p>
-                        <p>Charts</p>
-                        <p>Themes</p>
-                        <p>Colors</p>
+                        <div className="*:font-medium *:cursor-pointer *:opacity-80 flex justify-start items-center gap-[15px] max-[875px]:hidden">
+                            <p>Docs</p>
+                            <p>Components</p>
+                            <p>Blocks</p>
+                            <p>Charts</p>
+                            <p>Themes</p>
+                            <p>Colors</p>
+                        </div>
                     </div>
+                    <HiMenuAlt4 className="text-[30px] hidden max-[720px]:block" />
                 </div>
                 <div className="flex justify-end items-center gap-[15px] max-[400px]:gap-[5px]">
                     <Input

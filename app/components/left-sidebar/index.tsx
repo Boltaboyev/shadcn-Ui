@@ -8,7 +8,7 @@ const LeftSidebar = () => {
     const pathname = usePathname()
 
     return (
-        <aside className="w-[270px] border-r border-dashed h-[100vh] sticky top-[57px] p-[15px] flex flex-col gap-[5px]">
+        <aside className="w-[270px] border-r border-dashed h-[100vh] sticky top-[57px] p-[15px] flex flex-col gap-[5px] max-[720px]:hidden">
             <Link
                 href="/pagination"
                 className={`w-full text-start p-[7px_10px] cursor-pointer rounded-lg hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 ${
